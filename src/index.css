@@ -1,0 +1,13 @@
+body {
+  background-color: #131313;
+  color: #eee;
+  padding: 50px;
+}
+
+#content1,
+#content2 {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+}
