@@ -2,7 +2,7 @@ import { compute } from "./compute"
 
 const t0 = performance.now()
 
-function initContent(i, timeout) {
+function initContent(i) {
   compute(5)
   const t1 = performance.now()
   console.log(`Setting the content ${t1 - t0}`)
@@ -10,8 +10,8 @@ function initContent(i, timeout) {
   document.getElementById("content" + i).innerHTML = "Loaded"
 }
 function init() {
-  initContent(1, 10000)
-  initContent(2, 2000)
+  initContent(1)
+  initContent(2)
 }
 
 init()
